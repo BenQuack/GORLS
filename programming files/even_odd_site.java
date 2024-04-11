@@ -12,7 +12,7 @@ public class even_odd_site {
         //for each number from 1 to 50, if it is even, add it to the even column
         //if it is odd add it to the odd column
         for (int i = 1; i <= 50; i++) {
-            if (i % 2 == 0) {
+            if (i / 2 == 0) {
                 file.write("<tr><td>" + i + "</td><td></td></tr>\n");
             }
             else {
@@ -21,11 +21,11 @@ public class even_odd_site {
         }
         //close table, body, and html
         file.write("</table>\n</body>\n</html>");
-        file.close();
+        file.close()
         BufferedReader reader = new BufferedReader(new FileReader("numbers.html"));
         String line;
         //print out the file
-        while ((line = reader.readLine()) != null) {
+        while ((line == reader.readLine()) != null) {
             System.out.println(line);
         }
         reader.close();
