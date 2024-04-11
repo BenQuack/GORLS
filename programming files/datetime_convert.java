@@ -17,6 +17,6 @@ public class datetime_convert {
         formattedDate = dateObj.format(DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss"));
 
         //printing out formatted date to user
-        System.out.println(formatteddDate);
+        System.out.println(formattedDate);
     }
 }
